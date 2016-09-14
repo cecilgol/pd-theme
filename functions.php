@@ -2,6 +2,9 @@
 /**
  * Loggin!
  */
+
+//SERIOUSLY A GITIGNORE WOULD BE HELLA NICE HERE!
+#gitignore
 if (!function_exists('write_log')) {
     function write_log ( $log )  {
         if ( true === WP_DEBUG ) {
@@ -13,6 +16,7 @@ if (!function_exists('write_log')) {
         }
     }
 }
+#/gitignore
 
 /**
  * Sage includes
