@@ -210,6 +210,13 @@
           }
         });
       }
+    },
+    'my_account':{
+      init: function(){
+        $('.download-link').click(function(){
+          alert("Consequences of illegal sharing may include informing both parent educational institutions and Harvard University admissions of academic dishonesty.  Participation in group projects to illegally redistribute our materials, such as a Dropbox of stolen materials, would also constitute academic dishonesty.  We reserve the right to treat it as such.");
+        });
+      }
     }
   };
 

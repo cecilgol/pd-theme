@@ -12,8 +12,8 @@
 		  <div class="col-md-1 text-center"><span class="front-page-plus">+</span></div>
 		  <div class="col-md-3 text-center"><span class="number">2,519</span><br /><span class="small grey arial">files for sale</span></div>
 		</div>
+		<center><a href="/news" class="btn btn-lg btn-primary text-center news-button">Planet Debate News</a></center>
 	</div>
-
 </div>
 <?php get_template_part('templates/category-boxes'); ?>
 
@@ -21,7 +21,15 @@
       <div class="content">
         <main class="main">
 				<?php
-					$args = array( 'post_type' => 'product', 'stock' => 1, 'posts_per_page' => 10, 'orderby' =>'menu_order','order' => 'ASC' );
+					$args = array( 'post_type' => 'product', 'stock' => 1, 'posts_per_page' => 10, 'orderby' =>'date','order' => 'DESC', 
+						// 'tax_query'=>array(
+						// 	array(
+						// 		'taxonomy'=>'product_type',
+						// 		'field' => 'slug',
+						// 		'terms' => 'pd_subscription'
+						// 	)
+						// ) 
+					);
 					$loop = new WP_Query( $args );
 					while ( $loop->have_posts() ){ $loop->the_post(); global $product; woocommerce_get_template_part( 'content', 'product'); }
 /*
