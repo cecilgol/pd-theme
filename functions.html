@@ -1,0 +1,1490 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>body {
+  width: 45em;
+  border: 1px solid #ddd;
+  outline: 1300px solid #fff;
+  margin: 16px auto;
+}
+
+body .markdown-body
+{
+  padding: 30px;
+}
+
+@font-face {
+  font-family: fontawesome-mini;
+  src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+
+@font-face {
+  font-family: octicons-anchor;
+  src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+
+.markdown-body {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  color: #333333;
+  overflow: hidden;
+  font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  word-wrap: break-word;
+}
+
+.markdown-body a {
+  background: transparent;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline: 0;
+}
+
+.markdown-body b,
+.markdown-body strong {
+  font-weight: bold;
+}
+
+.markdown-body mark {
+  background: #ff0;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body sub,
+.markdown-body sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+.markdown-body sup {
+  top: -0.5em;
+}
+.markdown-body sub {
+  bottom: -0.25em;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+.markdown-body img {
+  border: 0;
+}
+
+.markdown-body hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+.markdown-body pre {
+  overflow: auto;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre,
+.markdown-body samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+.markdown-body input {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.markdown-body html input[disabled] {
+  cursor: default;
+}
+
+.markdown-body input {
+  line-height: normal;
+}
+
+.markdown-body input[type="checkbox"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body .codehilitetable {
+  border: 0;
+  border-spacing: 0;
+}
+
+.markdown-body .codehilitetable tr {
+  border: 0;
+}
+
+.markdown-body .codehilitetable pre,
+.markdown-body .codehilitetable div.codehilite {
+  margin: 0;
+}
+
+.markdown-body .linenos,
+.markdown-body .code,
+.markdown-body .codehilitetable td {
+  border: 0;
+  padding: 0;
+}
+
+.markdown-body td:not(.linenos) .linenodiv {
+  padding: 0 !important;
+}
+
+.markdown-body .code {
+  width: 100%;
+}
+
+.markdown-body .linenos div pre,
+.markdown-body .linenodiv pre,
+.markdown-body .linenodiv {
+  border: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.markdown-body .code div pre,
+.markdown-body .code div {
+  border: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-border-top-right-radius: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  -moz-border-radius-topright: 3px;
+  -moz-border-radius-bottomright: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.markdown-body * {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.markdown-body input {
+  font: 13px Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  line-height: 1.4;
+}
+
+.markdown-body a {
+  color: #4183c4;
+  text-decoration: none;
+}
+
+.markdown-body a:hover,
+.markdown-body a:focus,
+.markdown-body a:active {
+  text-decoration: underline;
+}
+
+.markdown-body hr {
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.markdown-body hr:before,
+.markdown-body hr:after {
+  display: table;
+  content: " ";
+}
+
+.markdown-body hr:after {
+  clear: both;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  line-height: 1.1;
+}
+
+.markdown-body h1 {
+  font-size: 30px;
+}
+
+.markdown-body h2 {
+  font-size: 21px;
+}
+
+.markdown-body h3 {
+  font-size: 16px;
+}
+
+.markdown-body h4 {
+  font-size: 14px;
+}
+
+.markdown-body h5 {
+  font-size: 12px;
+}
+
+.markdown-body h6 {
+  font-size: 11px;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ul ul ol,
+.markdown-body ul ol ol,
+.markdown-body ol ul ol,
+.markdown-body ol ol ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body code,
+.markdown-body pre,
+.markdown-body samp {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 12px;
+}
+
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body kbd {
+  background-color: #e7e7e7;
+  background-image: -moz-linear-gradient(#fefefe, #e7e7e7);
+  background-image: -webkit-linear-gradient(#fefefe, #e7e7e7);
+  background-image: linear-gradient(#fefefe, #e7e7e7);
+  background-repeat: repeat-x;
+  border-radius: 2px;
+  border: 1px solid #cfcfcf;
+  color: #000;
+  padding: 3px 5px;
+  line-height: 10px;
+  font: 11px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  display: inline-block;
+}
+
+.markdown-body>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+.markdown-body .headeranchor-link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  padding-right: 6px;
+  padding-left: 30px;
+  margin-left: -30px;
+}
+
+.markdown-body .headeranchor-link:focus {
+  outline: none;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  position: relative;
+  margin-top: 1em;
+  margin-bottom: 16px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.markdown-body h1 .headeranchor,
+.markdown-body h2 .headeranchor,
+.markdown-body h3 .headeranchor,
+.markdown-body h4 .headeranchor,
+.markdown-body h5 .headeranchor,
+.markdown-body h6 .headeranchor {
+  display: none;
+  color: #000;
+  vertical-align: middle;
+}
+
+.markdown-body h1:hover .headeranchor-link,
+.markdown-body h2:hover .headeranchor-link,
+.markdown-body h3:hover .headeranchor-link,
+.markdown-body h4:hover .headeranchor-link,
+.markdown-body h5:hover .headeranchor-link,
+.markdown-body h6:hover .headeranchor-link {
+  height: 1em;
+  padding-left: 8px;
+  margin-left: -30px;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.markdown-body h1:hover .headeranchor-link .headeranchor,
+.markdown-body h2:hover .headeranchor-link .headeranchor,
+.markdown-body h3:hover .headeranchor-link .headeranchor,
+.markdown-body h4:hover .headeranchor-link .headeranchor,
+.markdown-body h5:hover .headeranchor-link .headeranchor,
+.markdown-body h6:hover .headeranchor-link .headeranchor {
+  display: inline-block;
+}
+
+.markdown-body h1 {
+  padding-bottom: 0.3em;
+  font-size: 2.25em;
+  line-height: 1.2;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h2 {
+  padding-bottom: 0.3em;
+  font-size: 1.75em;
+  line-height: 1.225;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h3 {
+  font-size: 1.5em;
+  line-height: 1.43;
+}
+
+.markdown-body h4 {
+  font-size: 1.25em;
+}
+
+.markdown-body h5 {
+  font-size: 1em;
+}
+
+.markdown-body h6 {
+  font-size: 1em;
+  color: #777;
+}
+
+.markdown-body p,
+.markdown-body blockquote,
+.markdown-body ul,
+.markdown-body ol,
+.markdown-body dl,
+.markdown-body table,
+.markdown-body pre,
+.markdown-body .admonition {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.markdown-body hr {
+  height: 4px;
+  padding: 0;
+  margin: 16px 0;
+  background-color: #e7e7e7;
+  border: 0 none;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding-left: 2em;
+}
+
+.markdown-body ul ul,
+.markdown-body ul ol,
+.markdown-body ol ol,
+.markdown-body ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body li>p {
+  margin-top: 16px;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body dl dd {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+
+.markdown-body blockquote {
+  padding: 0 15px;
+  color: #777;
+  border-left: 4px solid #ddd;
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  word-break: normal;
+  word-break: keep-all;
+}
+
+.markdown-body table th {
+  font-weight: bold;
+}
+
+.markdown-body table th,
+.markdown-body table td {
+  padding: 6px 13px;
+  border: 1px solid #ddd;
+}
+
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+.markdown-body img {
+  max-width: 100%;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.markdown-body code,
+.markdown-body samp {
+  padding: 0;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(0,0,0,0.04);
+  border-radius: 3px;
+}
+
+.markdown-body code:before,
+.markdown-body code:after {
+  letter-spacing: -0.2em;
+  content: "\00a0";
+}
+
+.markdown-body pre>code {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+
+.markdown-body .codehilite {
+  margin-bottom: 16px;
+}
+
+.markdown-body .codehilite pre,
+.markdown-body pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+}
+
+.markdown-body .codehilite pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre code {
+  display: inline;
+  max-width: initial;
+  padding: 0;
+  margin: 0;
+  overflow: initial;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
+}
+
+.markdown-body pre code:before,
+.markdown-body pre code:after {
+  content: normal;
+}
+
+/* Admonition */
+.markdown-body .admonition {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  position: relative;
+  border-radius: 3px;
+  border: 1px solid #e0e0e0;
+  border-left: 6px solid #333;
+  padding: 10px 10px 10px 30px;
+}
+
+.markdown-body .admonition table {
+  color: #333;
+}
+
+.markdown-body .admonition p {
+  padding: 0;
+}
+
+.markdown-body .admonition-title {
+  font-weight: bold;
+  margin: 0;
+}
+
+.markdown-body .admonition>.admonition-title {
+  color: #333;
+}
+
+.markdown-body .attention>.admonition-title {
+  color: #a6d796;
+}
+
+.markdown-body .caution>.admonition-title {
+  color: #d7a796;
+}
+
+.markdown-body .hint>.admonition-title {
+  color: #96c6d7;
+}
+
+.markdown-body .danger>.admonition-title {
+  color: #c25f77;
+}
+
+.markdown-body .question>.admonition-title {
+  color: #96a6d7;
+}
+
+.markdown-body .note>.admonition-title {
+  color: #d7c896;
+}
+
+.markdown-body .admonition:before,
+.markdown-body .attention:before,
+.markdown-body .caution:before,
+.markdown-body .hint:before,
+.markdown-body .danger:before,
+.markdown-body .question:before,
+.markdown-body .note:before {
+  font: normal normal 16px fontawesome-mini;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  line-height: 1.5;
+  color: #333;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.markdown-body .admonition:before {
+  content: "\f056\00a0";
+  color: 333;
+}
+
+.markdown-body .attention:before {
+  content: "\f058\00a0";
+  color: #a6d796;
+}
+
+.markdown-body .caution:before {
+  content: "\f06a\00a0";
+  color: #d7a796;
+}
+
+.markdown-body .hint:before {
+  content: "\f05a\00a0";
+  color: #96c6d7;
+}
+
+.markdown-body .danger:before {
+  content: "\f057\00a0";
+  color: #c25f77;
+}
+
+.markdown-body .question:before {
+  content: "\f059\00a0";
+  color: #96a6d7;
+}
+
+.markdown-body .note:before {
+  content: "\f040\00a0";
+  color: #d7c896;
+}
+
+.markdown-body .admonition::after {
+  content: normal;
+}
+
+.markdown-body .attention {
+  border-left: 6px solid #a6d796;
+}
+
+.markdown-body .caution {
+  border-left: 6px solid #d7a796;
+}
+
+.markdown-body .hint {
+  border-left: 6px solid #96c6d7;
+}
+
+.markdown-body .danger {
+  border-left: 6px solid #c25f77;
+}
+
+.markdown-body .question {
+  border-left: 6px solid #96a6d7;
+}
+
+.markdown-body .note {
+  border-left: 6px solid #d7c896;
+}
+
+.markdown-body .admonition>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body .admonition>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* progress bar*/
+.markdown-body .progress {
+  display: block;
+  width: 300px;
+  margin: 10px 0;
+  height: 24px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #ededed;
+  position: relative;
+  box-shadow: inset -1px 1px 3px rgba(0, 0, 0, .1);
+}
+
+.markdown-body .progress-label {
+  position: absolute;
+  text-align: center;
+  font-weight: bold;
+  width: 100%; margin: 0;
+  line-height: 24px;
+  color: #333;
+  text-shadow: 1px 1px 0 #fefefe, -1px -1px 0 #fefefe, -1px 1px 0 #fefefe, 1px -1px 0 #fefefe, 0 1px 0 #fefefe, 0 -1px 0 #fefefe, 1px 0 0 #fefefe, -1px 0 0 #fefefe, 1px 1px 2px #000;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.markdown-body .progress-bar {
+  height: 24px;
+  float: left;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #96c6d7;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .5), inset 0 -1px 0 rgba(0, 0, 0, .1);
+  background-size: 30px 30px;
+  background-image: -webkit-linear-gradient(
+    135deg, rgba(255, 255, 255, .4) 27%,
+    transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%,
+    transparent 77%, transparent
+  );
+  background-image: -moz-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: -ms-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: -o-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+}
+
+.markdown-body .progress-100plus .progress-bar {
+  background-color: #a6d796;
+}
+
+.markdown-body .progress-80plus .progress-bar {
+  background-color: #c6d796;
+}
+
+.markdown-body .progress-60plus .progress-bar {
+  background-color: #d7c896;
+}
+
+.markdown-body .progress-40plus .progress-bar {
+  background-color: #d7a796;
+}
+
+.markdown-body .progress-20plus .progress-bar {
+  background-color: #d796a6;
+}
+
+.markdown-body .progress-0plus .progress-bar {
+  background-color: #c25f77;
+}
+
+.markdown-body .candystripe-animate .progress-bar{
+  -webkit-animation: animate-stripes 3s linear infinite;
+  -moz-animation: animate-stripes 3s linear infinite;
+  animation: animate-stripes 3s linear infinite;
+}
+
+@-webkit-keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+@-moz-keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+@keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+.markdown-body .gloss .progress-bar {
+  box-shadow:
+    inset 0 4px 12px rgba(255, 255, 255, .7),
+    inset 0 -12px 0 rgba(0, 0, 0, .05);
+}
+
+/* Multimarkdown Critic Blocks */
+.markdown-body .critic_mark {
+  background: #ff0;
+}
+
+.markdown-body .critic_delete {
+  color: #c82829;
+  text-decoration: line-through;
+}
+
+.markdown-body .critic_insert {
+  color: #718c00 ;
+  text-decoration: underline;
+}
+
+.markdown-body .critic_comment {
+  color: #8e908c;
+  font-style: italic;
+}
+
+.markdown-body .headeranchor {
+  font: normal normal 16px octicons-anchor;
+  line-height: 1;
+  display: inline-block;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.headeranchor:before {
+  content: '\f05c';
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+  margin: 0 4px 0.25em -20px;
+  vertical-align: middle;
+}
+
+/* Media */
+@media only screen and (min-width: 480px) {
+  .markdown-body {
+    font-size:14px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .markdown-body {
+    font-size:16px;
+  }
+}
+
+@media print {
+  .markdown-body * {
+    background: transparent !important;
+    color: black !important;
+    filter:none !important;
+    -ms-filter: none !important;
+  }
+
+  .markdown-body {
+    font-size:12pt;
+    max-width:100%;
+    outline:none;
+    border: 0;
+  }
+
+  .markdown-body a,
+  .markdown-body a:visited {
+    text-decoration: underline;
+  }
+
+  .markdown-body .headeranchor-link {
+    display: none;
+  }
+
+  .markdown-body a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  .markdown-body abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  .markdown-body .ir a:after,
+  .markdown-body a[href^="javascript:"]:after,
+  .markdown-body a[href^="#"]:after {
+    content: "";
+  }
+
+  .markdown-body pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+
+  .markdown-body pre,
+  .markdown-body blockquote {
+    border: 1px solid #999;
+    padding-right: 1em;
+    page-break-inside: avoid;
+  }
+
+  .markdown-body .progress,
+  .markdown-body .progress-bar {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  .markdown-body .progress {
+    border: 1px solid #ddd;
+  }
+
+  .markdown-body .progress-bar {
+    height: 22px;
+    border-right: 1px solid #ddd;
+  }
+
+  .markdown-body tr,
+  .markdown-body img {
+    page-break-inside: avoid;
+  }
+
+  .markdown-body img {
+    max-width: 100% !important;
+  }
+
+  .markdown-body p,
+  .markdown-body h2,
+  .markdown-body h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  .markdown-body h2,
+  .markdown-body h3 {
+    page-break-after: avoid;
+  }
+}
+</style><title>functions</title></head><body><article class="markdown-body"><?php
+/**
+ * Loggin!
+ */
+if (!function_exists('write_log')) {
+    function write_log ( $log )  {
+        if ( true === WP_DEBUG ) {
+            if ( is_array( $log ) || is_object( $log ) ) {
+                error_log( print_r( $log, true ) );
+            } else {
+                error_log( $log );
+            }
+        }
+    }
+}
+
+<p>/<em><em><br />
+ * Sage includes<br />
+</em><br />
+ * The $sage_includes array determines the code library included in your theme.<br />
+ * Add or remove files to the array as needed. Supports child theme overrides.<br />
+</em><br />
+ * Please note that missing files will produce a fatal error.<br />
+<em><br />
+ * @link <a href="https://github.com/roots/sage/pull/1042"><a href="https://github.com/roots/sage/pull/1042">https://github.com/roots/sage/pull/1042</a></a><br />
+</em>/<br />
+$sage_includes = [<br />
+  &lsquo;lib/assets.php&rsquo;,    // Scripts and stylesheets<br />
+  &lsquo;lib/extras.php&rsquo;,    // Custom functions<br />
+  &lsquo;lib/setup.php&rsquo;,     // Theme setup<br />
+  &lsquo;lib/titles.php&rsquo;,    // Page titles<br />
+  &lsquo;lib/wrapper.php&rsquo;,   // Theme wrapper class<br />
+  &lsquo;lib/customizer.php&rsquo; // Theme customizer<br />
+];</p>
+<p>foreach ($sage_includes as $file) {<br />
+  if (!$filepath = locate_template($file)) {<br />
+    trigger_error(sprintf(__(&lsquo;Error locating %s for inclusion&rsquo;, &lsquo;sage&rsquo;), $file), E_USER_ERROR);<br />
+  }</p>
+<p>require_once $filepath;<br />
+}<br />
+unset($file, $filepath);</p>
+<p>$user_favorite_files = get_user_meta(wp_get_current_user()-&gt;ID,&rsquo;favorite_files&rsquo;,true);</p>
+<p>function get_post_hearts($post_id){<br />
+  return get_post_meta($post_id,&rsquo;_hearts&rsquo;,true);<br />
+}</p>
+<p>function get_post_downloads($post_id){<br />
+  return get_post_meta($post_id,&rsquo;_downloads&rsquo;,true);<br />
+}</p>
+<p>add_filter(&lsquo;woocommerce_product_add_to_cart_text&rsquo;, &lsquo;PD_Add_cart_button_text&rsquo;);    // 2.1 +<br />
+function PD_Add_cart_button_text() {<br />
+        $html=&rsquo;<span class="add-to-cart"></span>&lsquo;;<br />
+        return __( $html , &lsquo;woocommerce&rsquo; );<br />
+}</p>
+<p>add_filter(&lsquo;bundle_add_to_cart_text&rsquo;, &lsquo;PD_bundle_add_to_cart_text&rsquo;);<br />
+function PD_bundle_add_to_cart_text(){<br />
+        $html=&rsquo;<span class="add-to-cart"></span>&lsquo;;<br />
+        return __( $html , &lsquo;woocommerce&rsquo; );<br />
+}</p>
+<p>add_filter(&lsquo;woocommerce_archive_description&rsquo;,&rsquo;PD_topic_category_list&rsquo;);</p>
+<p>function PD_topic_category_list(  ){<br />
+    $parent_cat = get_queried_object();<br />
+    $cat_id = $parent_cat-&gt;parent;<br />
+    $dog_id = end(get_ancestors($parent_cat-&gt;term_id,&rsquo;product_cat&rsquo;));<br />
+    $dog = get_term($dog_id,&rsquo;product_cat&rsquo;);</p>
+<pre><code>$rents = get_ancestors($parent_cat-&gt;term_id,'product_cat');
+
+$parent_args = array(
+  'parent'      =&gt; $dog_id,
+  'depth'       =&gt; '1',
+  'hierarchical'=&gt; true,
+  'orderby'     =&gt; 'Name',
+  'order'       =&gt; 'DESC',
+  'taxonomy'    =&gt; 'product_cat',
+  'title_li'    =&gt; ''
+  );
+
+$categories = get_categories( $parent_args );
+
+if (count($rents) &gt; 1){
+  $x = get_term($parent_cat-&gt;parent,'product_cat');
+  $scaid = $x-&gt;id;
+} else {
+  $scaid = $parent_cat-&gt;term_id;
+}
+
+$subcategory_args = array(
+  'parent'      =&gt; $scaid,
+  'depth'       =&gt; 2,
+  'hierarchical'=&gt; true,
+  'orderby'     =&gt; 'Name',
+  'order'       =&gt; 'ASC',
+  'taxonomy'    =&gt; 'product_cat',
+  'title_li'    =&gt; ''
+  );
+
+$subcategories = get_categories( $subcategory_args );
+$col_value = round(count($subcategories) / 12);
+$col_total = count($subcategories);
+$col_array = ["zero","one","two","three","four","five","six","seven","eight","nine","ten","eleven","twelve"];
+</code></pre>
+<p>/*<em><br />
+ * BEGIN HTML<br />
+</em>/?&gt;<br />
+  <div class="topic-area"><br />
+    <div class="topic-dropdown dropdown row text-center"><br />
+      <button class="btn btn-default dropdown-toggle oswald" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><br />
+        &lt;?php if ( $parent_cat-&gt;taxonomy == &lsquo;product_cat&rsquo;) {<br />
+          if ($dog-&gt;slug == &lsquo;policy&rsquo;) {<br />
+            echo preg_filter(&lsquo;/^[\d-]+[\s]/&rsquo;, &lsquo;&rsquo;, $parent_cat-&gt;name );<br />
+          } else {<br />
+            echo($parent_cat-&gt;name);<br />
+          }<br />
+          ?&gt;<br />
+        <i class="fa fa-chevron-circle-down grey" aria-hidden="true"></i><br />
+      </button><br />
+      <ul class="dropdown-menu topic-dropdown-menu text-left" aria-labelledby="dropdownMenu2"><br />
+        &lt;?php<br />
+          foreach ($categories as $category) {<br />
+          if ($dog-&gt;slug == &lsquo;policy&rsquo;) {<br />
+            $name = preg_filter(&lsquo;/^[\d-]+[\s]/&rsquo;, &lsquo;&rsquo;, $category-&gt;name );<br />
+            } else {<br />
+            $name = $category-&gt;name;<br />
+            }<br />
+          $html = &lsquo;<li class="text-left cat-item cat-item-' . $category->term_id . &lsquo;&ldquo;&gt;<a href="' . get_bloginfo('url') . '/product-category/' . $category->slug . &lsquo;&ldquo;&gt;&rsquo; . $name . &lsquo;</a></li>&lsquo;;<br />
+          echo $html;<br />
+          }<br />
+        ?&gt;<br />
+      </ul><br />
+      &lt;?php<br />
+         } else {<br />
+         echo $parent_cat-&gt;name;<br />
+         ?&gt;</button>&lt;?php<br />
+       }?&gt;<br />
+      </div><br />
+      <div class="topic-subcategories container"></p>
+<pre><code>  &lt;?php
+  if ($col_total % 2 != 0){
+    echo '&lt;div class="'. $col_array[$col_total] .'-cols"&gt;';
+  }else{
+    echo '&lt;div&gt;';
+  }
+
+  foreach ($subcategories as $category) {
+</code></pre>
+<p>/<strong><br />
+ * BEGIN HTML<br />
+ */?&gt;<br />
+        <div class="col-md-<?php echo $col_value ?> scl-container&rdquo; style=&rdquo;cursor:pointer;&rdquo;&gt;<br />
+          <a class="subcategory-link" id="<?php echo $category->term_id ?&gt;&rdquo;&gt;<br />
+          <div class="tsc-circle">&lt;?php echo $category-&gt;name[0] ?&gt; </div><br />
+          &lt;?php echo $category-&gt;name; ?&gt;<br />
+          </a><br />
+        </div><br />
+&lt;?php<br />
+/</strong><br />
+ * END HTML<br />
+<em>/}<br />
+        ?&gt;<br />
+        </div><br />
+      </div><br />
+    </div><br />
+  </div><br />
+&lt;?php<br />
+/</em><em><br />
+ * END HTML<br />
+</em>/<br />
+}</p>
+<p>add_action(&lsquo;wp_ajax_pd_subcategory_link_clicked&rsquo;, &lsquo;pd_subcategory_link_clicked&rsquo; );<br />
+add_action(&lsquo;wp_ajax_nopriv_pd_subcategory_link_clicked&rsquo;, &lsquo;pd_subcategory_link_clicked&rsquo; );<br />
+function pd_subcategory_link_clicked(){<br />
+  global $product, $woocommerce, $woocommerce_loop;</p>
+<p>$sclid = json_decode( stripslashes( $_POST[&lsquo;sclid&rsquo;] ), true );</p>
+<p>$args = array(<br />
+    &lsquo;post_type&rsquo; =&gt; &lsquo;product&rsquo;,<br />
+    &lsquo;tax_query&rsquo; =&gt; array(<br />
+      array(<br />
+        &lsquo;taxonomy&rsquo; =&gt; &lsquo;product_cat&rsquo;,<br />
+        &lsquo;terms&rsquo;    =&gt; $sclid,<br />
+        ),<br />
+      ),<br />
+    );<br />
+  $posts = new WP_Query( $args );<br />
+  while ( $posts-&gt;have_posts() ) {<br />
+    $posts-&gt;the_post();</p>
+<pre><code>woocommerce_get_template_part( 'content', 'product');
+</code></pre>
+<p>}</p>
+<p>}</p>
+<p>add_filter(&lsquo;woocommerce_before_main_content&rsquo;,&rsquo;PD_type_category_list&rsquo;);<br />
+function PD_type_category_list( ){</p>
+<pre><code>global $parent_id;
+$page_cat   = get_queried_object();
+$parent_id  = $page_cat-&gt;parent;
+</code></pre>
+<p>/*<em><br />
+ * BEGIN HTML<br />
+</em>/?&gt;</p>
+<p>&lt;?php get_template_part(&lsquo;templates/category-boxes&rsquo;); ?&gt;</p>
+<?php
+/**
+ * END HTML
+
+<p>remove_action(&lsquo;woocommerce_before_shop_loop_item&rsquo;,&rsquo;woocommerce_before_shop_loop_item&rsquo;,10);<br />
+add_action(&lsquo;woocommerce_before_shop_loop_item&rsquo;, &lsquo;PD_before_shop_loop_item&rsquo;);<br />
+remove_action(&lsquo;woocommerce_before_shop_loop_item_title&rsquo;,&rsquo;woocommerce_before_shop_loop_item_title&rsquo;);<br />
+remove_action( &lsquo;woocommerce_shop_loop_item_title&rsquo;,&rsquo;woocommerce_before_shop_loop_item&rsquo; );<br />
+do_action( &lsquo;woocommerce_after_shop_loop_item_title&rsquo; );<br />
+do_action( &lsquo;woocommerce_after_shop_loop_item&rsquo; );</p>
+<p>function PD_before_shop_loop_item(){<br />
+?&gt;<br />
+          <!-- FONTAWESOME REQUIRES SPACES IN THE HTML, NOT CSS --><br />
+          <div class="product-card"><br />
+            <div class="product-card-top"><br />
+              <div class="product-title pull-left"><br />
+                <a id="id-<?php the_id(); ?>&rdquo; href=&rdquo;&lt;?php the_permalink(); ?&gt;&rdquo; title=&rdquo;&lt;?php the_title(); ?&gt;&rdquo;&gt;<br />
+                <h3 class="oswald">&lt;?php the_title(); ?&gt;</h3><br />
+                </a><br />
+                <div class="product-date">&lt;?php the_time(&lsquo;F j, Y&rsquo;) ?&gt;</div><br />
+              </div><br />
+              <div class="product-utilities pull-right"><br />
+                <span class="i-heart-this"  id="<?php the_id(); ?>&ldquo;&gt;</span><br />
+                &lt;?php woocommerce_template_loop_add_to_cart();?&gt;<br />
+                <span class="price oswald">&lt;?php woocommerce_template_single_price(); ?&gt;</span><br />
+              </div><br />
+              <div class="clearfix"></div><br />
+            </div><br />
+            <div class="product-card-bottom"><br />
+              <div class="metadata pull-left"><br />
+                <span class="pages"> 46</span><br />
+                <span class="hearts"> &lt;?php get_post_hearts(the_id()); ?&gt;</span><br />
+                <span class="downloads"> 197</span><br />
+              </div><br />
+              <div class="categories pull-right"><br />
+                &lt;?php<br />
+                 $terms = wp_get_post_terms( $product-&gt;id, &lsquo;product_tag&rsquo;);<br />
+                    foreach($terms as $term) {<br />
+                      echo &lsquo;<a href="/product-tag/'. $term->slug .&rsquo;&rdquo; class=&rdquo;category btn btn-default btn-square btn-xs&rdquo; role=&rdquo;button&rdquo;&gt;&rsquo;.$term-&gt;name.&rsquo;</a>&lsquo;;<br />
+                    }<br />
+                ?&gt;</p>
+<pre><code>          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+
+    }
+</code></pre>
+<?php MOVE THIS LINE UP LATER  */ }
+
+<p>// THIS IS ALL SUBSCRIBER JUNK<br />
+if ( get_user_meta( wp_get_current_user()-&gt;ID )[&lsquo;subscriptions&rsquo;][0] == &lsquo;everything&rsquo;){<br />
+  add_filter(&lsquo;woocommerce_loop_add_to_cart_link&rsquo;,&rsquo;pd_subscriber_add_to_cart&rsquo;,1,1);<br />
+  add_action(&lsquo;wp_ajax_pd_subscriber_download&rsquo;, &lsquo;pd_subscriber_ajax_callback&rsquo; );<br />
+  add_action( &lsquo;woocommerce_email&rsquo;, &lsquo;unhook_those_pesky_emails&rsquo; );<br />
+}</p>
+<p>function pd_subscriber_add_to_cart(){<br />
+  global $product;</p>
+<p>$all_meta_for_user = get_user_meta( wp_get_current_user()-&gt;ID );<br />
+    $downloads = $product-&gt;get_files();</p>
+<pre><code>foreach( $downloads as $key =&gt; $each_download ) {
+</code></pre>
+<p>//      WC_AJAX::grant_access_to_download($each_download[$key],$product-&gt;id);<br />
+      echo &lsquo;<a class="btn btn-default subscriber-download-button" id="'.$key.'" data-product-id="'.$product->id.&rsquo;&rdquo; data-link=&rdquo;&rsquo;.$each_download[&ldquo;file&rdquo;].&rsquo;&ldquo;&gt;<i class="fa fa-download" aria-hidden="true"></i></a>&lsquo;;<br />
+    }<br />
+}</p>
+<p>add_action(&lsquo;admin_footer&rsquo;,&rsquo;pd_subscriber_user_management_script&rsquo;);</p>
+<p>function pd_subscriber_user_management_script(){<br />
+  ?&gt;<br />
+  <script><br />
+  console.log(&ldquo;booyah!&rdquo;);<br />
+  jQuery(document).ready(function($){<br />
+    var userid = jQuery(&lsquo;#make-subscriber&rsquo;).data(&lsquo;userid&rsquo;), pd_action = &ldquo;subscribe&rdquo;;<br />
+    if (jQuery(this).prop(&lsquo;checked&rsquo;)){<br />
+      pd_action = &ldquo;unsubscribe&rdquo;;<br />
+    }<br />
+    var data = {<br />
+      &lsquo;action&rsquo;: &lsquo;pd_admin_make_subscriber_&rsquo; + pd_action,<br />
+      &lsquo;uid&rsquo;: userid<br />
+      };<br />
+    jQuery(&ldquo;#make-subscriber&rdquo;).click(function(err){</p>
+<pre><code>jQuery.post(
+  ajaxurl,
+  data,
+  function(response){
+    alert('got' + response + 'from server!');
+  });
+</code></pre>
+<p>//     success: function(response){<br />
+  //       console.log(response);<br />
+  //     },<br />
+  //     error: function(XMLHttpRequest, textStatus, errorThrown) {<br />
+  //     }<br />
+  //   });<br />
+  // });</p>
+<pre><code>});
+</code></pre>
+<p>});<br />
+  </script><br />
+  &lt;?php<br />
+}</p>
+<p>add_action(&lsquo;wp_ajax_pd_admin_make_subscriber_subscribe&rsquo;,&rsquo;pd_admin_make_subscriber_subscribe&rsquo;);<br />
+add_action(&lsquo;wp_ajax_pd_admin_make_subscriber_unsubscribe&rsquo;,&rsquo;pd_admin_make_subscriber_unsubscribe&rsquo;);</p>
+<p>function pd_admin_make_subscriber_subscribe(){<br />
+  global $wpdb;</p>
+<p>write_log($_POST);</p>
+<p>$user_id = $_POST[&lsquo;uid&rsquo;];<br />
+  add_user_meta($user_id,&rdquo;subscriptions&rdquo;,&rdquo;everything&rdquo;);</p>
+<p>return &ldquo;removed $user_id&rdquo;;<br />
+  wp_die();<br />
+}</p>
+<p>function pd_admin_make_subscriber_unsubscribe(){<br />
+  global $wpdb;</p>
+<p>$user_id = $_POST[&lsquo;uid&rsquo;];<br />
+  delete_user_meta($user_id,&rdquo;subscriptions&rdquo;,&rdquo;everything&rdquo;);</p>
+<p>return &ldquo;removed $user_id&rdquo;;<br />
+  wp_die();<br />
+}</p>
+<p>function pd_subscriber_ajax_callback(){<br />
+  $download_id = $_POST[&lsquo;dlid&rsquo;];<br />
+  $product_id = $_POST[&lsquo;dlpk&rsquo;];<br />
+  global $wpdb;</p>
+<p>$wpdb-&gt;hide_errors();</p>
+<p>$order = wc_create_order(array(<br />
+        &lsquo;status&rsquo;        =&gt; &lsquo;&rsquo;,<br />
+        &lsquo;customer_id&rsquo;   =&gt; wp_get_current_user()-&gt;ID,<br />
+        &lsquo;customer_note&rsquo; =&gt; null,<br />
+        &lsquo;order_id&rsquo;      =&gt; 0,<br />
+        &lsquo;created_via&rsquo;   =&gt; &lsquo;&rsquo;,<br />
+        &lsquo;parent&rsquo;        =&gt; 0));</p>
+<p>$order-&gt;update_status(&lsquo;wc-processing&rsquo;);<br />
+  wc_downloadable_file_permission( $download_id, $product_id, $order, $qty = 1 );</p>
+<p>echo &ldquo;Download file from Your Account&rdquo;;<br />
+  die();<br />
+}</p>
+<p>function unhook_those_pesky_emails( $email_class ) {</p>
+<pre><code>/**
+ * Hooks for sending emails during store events
+ **/
+remove_action( 'woocommerce_low_stock_notification', array( $email_class, 'low_stock' ) );
+remove_action( 'woocommerce_no_stock_notification', array( $email_class, 'no_stock' ) );
+remove_action( 'woocommerce_product_on_backorder_notification', array( $email_class, 'backorder' ) );
+
+// New order emails
+remove_action( 'woocommerce_order_status_pending_to_processing_notification', array( $email_class-&gt;emails['WC_Email_New_Order'], 'trigger' ) );
+remove_action( 'woocommerce_order_status_pending_to_completed_notification', array( $email_class-&gt;emails['WC_Email_New_Order'], 'trigger' ) );
+remove_action( 'woocommerce_order_status_pending_to_on-hold_notification', array( $email_class-&gt;emails['WC_Email_New_Order'], 'trigger' ) );
+remove_action( 'woocommerce_order_status_failed_to_processing_notification', array( $email_class-&gt;emails['WC_Email_New_Order'], 'trigger' ) );
+remove_action( 'woocommerce_order_status_failed_to_completed_notification', array( $email_class-&gt;emails['WC_Email_New_Order'], 'trigger' ) );
+remove_action( 'woocommerce_order_status_failed_to_on-hold_notification', array( $email_class-&gt;emails['WC_Email_New_Order'], 'trigger' ) );
+
+// Processing order emails
+remove_action( 'woocommerce_order_status_pending_to_processing_notification', array( $email_class-&gt;emails['WC_Email_Customer_Processing_Order'], 'trigger' ) );
+remove_action( 'woocommerce_order_status_pending_to_on-hold_notification', array( $email_class-&gt;emails['WC_Email_Customer_Processing_Order'], 'trigger' ) );
+
+// Completed order emails
+remove_action( 'woocommerce_order_status_completed_notification', array( $email_class-&gt;emails['WC_Email_Customer_Completed_Order'], 'trigger' ) );
+
+// Note emails
+remove_action( 'woocommerce_new_customer_note_notification', array( $email_class-&gt;emails['WC_Email_Customer_Note'], 'trigger' ) );
+</code></pre>
+<p>}</p>
+<p>add_action(&lsquo;wp_ajax_pd_add_or_remove_hearts&rsquo;, &lsquo;pd_add_or_remove_hearts&rsquo;);<br />
+add_action(&lsquo;wp_ajax_nopriv_pd_add_or_remove_hearts&rsquo;,&rsquo;pd_add_or_remove_hearts&rsquo;);</p>
+<p>function pd_add_or_remove_hearts(){<br />
+  //sends a post id, we need to get the user_id here<br />
+  $post_id = $_POST[&lsquo;pid&rsquo;];<br />
+  $action = $_POST[&lsquo;a&rsquo;];<br />
+  $user_id = wp_get_current_user()-&gt;ID;<br />
+  $post_hearts = get_post_meta($post_id,&rsquo;_hearts&rsquo;,true);<br />
+  if ($user_id != null) {</p>
+<pre><code>$a = get_user_meta($user_id,'favorite_files',true);
+
+if(!is_array($a)){
+  $aval = $a;
+  $a = array($aval);
+}
+
+switch ($action) {
+  case 'a':
+    $new_hearts_count = absint($post_hearts) + 1;
+    $a[]= $post_id;
+    update_user_meta(absint($user_id), 'favorite_files', $a);
+    break;
+  case 'd':
+    $new_hearts_count = absint($post_hearts) - 1;
+    delete_user_meta(absint($user_id), 'favorite_files', $a);
+    break;
+  default:
+    $new_hearts_count = absint($post_hearts);
+    break;
+}
+update_post_meta(absint($post_id), '_hearts', $new_hearts_count);
+$r = array(
+  'hearts' =&gt; (string)$new_hearts_count
+  );
+</code></pre>
+<p>} else {<br />
+    $r = array(<br />
+      &lsquo;html&rsquo; =&gt; &lsquo;You must login to add favorite files.&rsquo;<br />
+      );<br />
+  }<br />
+  echo json_encode($r);<br />
+  die();<br />
+}</p>
+<p>add_filter(&lsquo;woocommerce_show_page_title&rsquo;,&rsquo;__return_false&rsquo;);<br />
+remove_action( &lsquo;woocommerce_before_main_content&rsquo;,&rsquo;woocommerce_breadcrumb&rsquo;, 20, 0);<br />
+remove_action( &lsquo;woocommerce_before_shop_loop&rsquo;, &lsquo;woocommerce_catalog_ordering&rsquo;, 30 );</p>
+<p>function woocommerce_result_count(){<br />
+  return;<br />
+}</p>
+<p>/<em><br />
+ * Adding the column<br />
+</em>/<br />
+function rd_user_id_column( $columns ) {<br />
+  $columns[&lsquo;user_id&rsquo;] = &lsquo;ID&rsquo;;<br />
+  return $columns;<br />
+}<br />
+add_filter(&lsquo;manage_users_columns&rsquo;, &lsquo;rd_user_id_column&rsquo;);</p>
+<p>/<em><br />
+ * Column content<br />
+</em>/<br />
+function rd_user_id_column_content($value, $column_name, $user_id) {<br />
+  if ( &lsquo;user_id&rsquo; == $column_name )<br />
+    return $user_id;<br />
+  return $value;<br />
+}<br />
+add_action(&lsquo;manage_users_custom_column&rsquo;,  &lsquo;rd_user_id_column_content&rsquo;, 10, 3);</p>
+<p>/<em><br />
+ * Column style (you can skip this if you want)<br />
+</em>/<br />
+function rd_user_id_column_style(){<br />
+  echo &lsquo;<style>.column-user_id{width: 5%}</style>&lsquo;;<br />
+}<br />
+add_action(&lsquo;admin_head-users.php&rsquo;,  &lsquo;rd_user_id_column_style&rsquo;);</p>
+<p>add_action( &lsquo;after_setup_theme&rsquo;, &lsquo;woocommerce_support&rsquo; );<br />
+function woocommerce_support() {<br />
+    add_theme_support( &lsquo;woocommerce&rsquo; );<br />
+}</p>
+<p>add_action(&lsquo;wp_ajax_pd_infinite_scroll&rsquo;, &lsquo;pd_infinite_scroll&rsquo;);<br />
+add_action(&lsquo;wp_ajax_nopriv_pd_infinite_scroll&rsquo;,&rsquo;pd_infinite_scroll&rsquo;);</p>
+<p>function pd_infinite_scroll(){<br />
+  global $wordpress, $wpdb, $woocommerce, $woocommerce_loop;</p>
+<p>$p = $_POST[&lsquo;p&rsquo;];<br />
+  $html_to_return = &lsquo;&rsquo;;<br />
+  $args = array( &lsquo;post_type&rsquo; =&gt; &lsquo;product&rsquo;,&rsquo;posts_per_page&rsquo; =&gt; 10, &lsquo;orderby&rsquo; =&gt;&rsquo;SKU&rsquo;,&rsquo;order&rsquo; =&gt; &lsquo;DESC&rsquo;,&rsquo;meta_query&rsquo; =&gt; array(<br />
+    array(<br />
+      &lsquo;key&rsquo; =&gt; &lsquo;_regular_price&rsquo;,<br />
+      &lsquo;value&rsquo; =&gt; 0<br />
+    )),<br />
+  &lsquo;paged&rsquo;=&gt;$p,<br />
+  );<br />
+  $loop = new WP_Query( $args );</p>
+<p>while ( $loop-&gt;have_posts() ){ $loop-&gt;the_post(); global $product; $html_to_return .= woocommerce_get_template_part( &lsquo;content&rsquo;, &lsquo;product&rsquo;); }</p>
+<p>die();<br />
+}</p>
+<p>add_action(&lsquo;wp_ajax_pd_contact_us_submit&rsquo;,&rsquo;pd_contact_us_submit&rsquo;);<br />
+add_action(&lsquo;wp_ajax_nopriv_pd_contact_us_submit&rsquo;,&rsquo;pd_contact_us_submit&rsquo;);<br />
+function pd_contact_us_submit(){</p>
+<p>$admin_email = &lsquo;<a href="mailto:thorassic5@gmail.com">thorassic5@gmail.com</a>&rsquo;;<br />
+  $email = $_POST[&lsquo;e&rsquo;];<br />
+  $name = $_POST[&lsquo;n&rsquo;];<br />
+  $message = $_POST[&lsquo;m&rsquo;];<br />
+  $rr = $_POST[&lsquo;rr&rsquo;];</p>
+<p>$subject = &lsquo;PLANET DEBATE CONTACT FORM - NEW MESSAGE&rsquo;;</p>
+<p>$from=&rdquo;From: $name&lt;$email&gt;\r\nReturn-path: $email&rdquo;;</p>
+<p>if ($rr == &lsquo;true&rsquo;){<br />
+    $subject .= &ldquo;: RESPONSE REQUESTED&rdquo;;<br />
+    mail($admin_email, $subject, $message, $from);<br />
+  } else {<br />
+    mail($admin_email, $subject, $message, $from);<br />
+  }</p>
+<p>die();<br />
+}</p>
+<p>//add_filter( &lsquo;product_type_selector&rsquo;, &lsquo;add_pd_subscription_product&rsquo; );<br />
+//add_action(&lsquo;init&rsquo;, &lsquo;register_pd_sbscription_product&rsquo;);</p></article></body></html>
